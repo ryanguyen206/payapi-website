@@ -1,18 +1,32 @@
 import React from 'react'
 import logo from '../assets/shared/desktop/logo.svg'
-import patternCircle from '../assets/shared/desktop/bg-pattern-circle.svg'
+import '../App.css'
 import menu from '../assets/shared/mobile/menu.svg'
 const Navbar = () => {
   return (
-    <div className='flex items-center justify-between px-10 pt-10'>
+    <>
+    <div className='flex items-center justify-between mx-10 pt-10 lg:mx-32 2xl:mx-56'>
       <img src={logo}/>
-      <img src={menu}/>
-      
-      
-      {/* <img className='border absolute -top-40' src={patternCircle}/> */}
 
+      <div className='lg:hidden'>
+        <img src={menu}/>
+      </div>
+    
 
+      <div className='hidden lg:flex items-center  w-full justify-between'>
+        <ul className='flex text-secondary_blue ml-14 space-x-5 text-xl'>
+          <li className='hover:text-primary_light cursor-pointer '>Pricing</li>
+          <li className='hover:text-primary_light  cursor-pointer '>About</li>
+          <li className='hover:text-primary_light cursor-pointer '>Contact</li>
+        </ul>
+        <button className='bg-primary_dark hover:bg-secondary_pink z-10 rounded-full text-white px-6 py-3 z-1 lg:-ml-16'>Schedule a demo</button>
+  
+      </div>
+     
     </div>
+ 
+    </>
+
   )
 }
 
