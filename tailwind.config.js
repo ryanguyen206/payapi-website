@@ -8,11 +8,12 @@ export default {
     extend: {
       colors:{
         primary_dark: '#ba4270',
-        primary_light: '#fbfcfe',
+        primary_light: '#b7bcc0',
         secondary_blue: '#36536b',
-        secondary_mirage:'#1b262f',
+        secondary_black:'#1b262f',
         secondary_pink:'#da6d97',
-        secondary_lblue:'#6c8294'
+        secondary_lblue:'#6c8294',
+        secondary_bg:'#edf3f8'
       },
       fontFamily:{
         sans:['Public Sans', 'sans-serif'],
