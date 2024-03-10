@@ -22,7 +22,7 @@ const Home = () => {
                   placeholder='Enter email address'
               />
               <br/>
-              <button className='bg-primary_dark lg:-ml-16 w-9/12 md:w-6/12  hover:bg-secondary_pink text-white  rounded-full py-4 px-6 mt-4 lg:mt-0 font-semibold'>Schedule a Demo</button>
+              <button className='bg-primary_dark lg:-ml-16 w-8/12 md:w-6/12  hover:bg-secondary_pink text-white  rounded-full py-4 px-6 mt-4 lg:mt-0 font-semibold'>Schedule a Demo</button>
           </form>
           <p className='text-neutral text-secondary_lblue mt-8 mb-20 font-medium'>Have any questions? <span className='font-bold'>Contact Us</span></p>
         </div>
