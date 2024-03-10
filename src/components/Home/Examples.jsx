@@ -6,32 +6,32 @@ import bank from '../../assets/home/desktop/icon-banking-and-coverage.svg'
 
 const Examples = () => {
   return (
-    <div className='bg-secondary_bg mt-20 md:mt-0 lg:mt-20 lg:mx-32 2xl:mx-56 border'>
+    <div className='bg-secondary_bg mt-20 md:mt-0 lg:mt-20 lg:mx-32 2xl:mx-72 '>
 
           {/* <div className='text-center'>
             <p className='mt-10 mb-6 text-secondary_blue text-4xl font-bold'>Easy to implement</p>
             <p className='text-secondary_lblue text-lg w-10/12 mx-auto'>Our API comes with just a few lines of code. You’ll be up and running in no time. We built our documentation page to integrate payments functionality with ease.</p>
           </div> */}
     
-          <div className='text-center lg:flex lg:items-center  '>
+          <div className='text-center lg:flex lg:items-center   '>
             <div>
               <img className='mx-auto md:scale-75 lg:scale-110  lg:-translate-x-10  pl-4 lg:mr-16' src={phone}/>
             </div>
-            <div className='lg:text-start lg:mb-8 lg:translate-x-20 '>
+            <div className='lg:mb-8 lg:text-start '>
                 <p className='md:-mt-24 lg:mt-0 mt-10 mb-6 text-secondary_blue text-4xl font-bold'>Simple UI & UX</p>
-                <p className='text-secondary_lblue text-lg w-10/12 mx-auto md:w-7/12 lg:w-8/12 lg:mx-0'>Our pre-built form is easy to integrate in your app or website’s checkout 
+                <p className='text-secondary_lblue text-lg w-10/12 mx-auto md:w-7/12 lg:mx-0 lg:w-full'>Our pre-built form is easy to integrate in your app or website’s checkout 
         flow and designed to optimize conversion.</p>
             </div>
        
           </div>
 
-          <div className='text-center lg:flex lg:items-center lg:justify-between mt-24 lg:mt-32 md:mt-0 '>
+          <div className='text-center  lg:flex lg:items-center lg:justify-between mt-24 lg:mt-32 md:mt-0 '>
             <div className='lg:order-4'>
-              <img className='mx-auto md:scale-75 lg:scale-125 lg:-translate-x-10  pl-4' src={phone}/>
+              <img className='mx-auto md:scale-75 lg:scale-125 pl-4' src={phone}/>
             </div>
             <div className='lg:text-start lg:mb-8  '>
                 <p className='md:-mt-24 lg:mt-0 mt-10 mb-6 text-secondary_blue text-4xl  font-bold'>Easy to implement</p>
-                <p className='text-secondary_lblue text-lg w-10/12 mx-auto md:w-7/12 lg:w-8/12 lg:mx-0'>Our API comes with just a few lines of code. You'll be up and running in to time. We built our documentation page to integrate payments functionality with issue. </p>
+                <p className='text-secondary_lblue text-lg w-10/12 mx-auto md:w-7/12 lg:w-full lg:mx-0'>Our API comes with just a few lines of code. You'll be up and running in to time. We built our documentation page to integrate payments functionality with issue. </p>
             </div>
        
           </div>
