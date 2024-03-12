@@ -6,7 +6,7 @@ import facebook from '../assets/shared/desktop/facebook.svg'
 const Footer = () => {
   return (
     <>
-    <div className='bg-secondary_black text-center py-10  lg:px-32 2xl:px-56 lg:flex lg:items-center justify-between'>
+    <div className='bg-secondary_black text-center py-10  lg:px-32 2xl:px-80  lg:flex lg:items-center justify-between'>
         <div>
           <img className='scale-75 mx-auto lg:mx-0' src={logo}/>
         </div>

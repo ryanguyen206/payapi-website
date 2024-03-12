@@ -8,7 +8,7 @@ import google from '../..//assets/shared/desktop/google.svg'
 
 const Collaboration = () => {
   return (
-    <div className='bg-secondary_black text-white px-10 py-20 2xl:px-56 text-center 2xl:flex 2xl:justify-between'>
+    <div className='bg-secondary_black text-white px-10 py-20 2xl:px-80 text-center 2xl:flex 2xl:justify-between'>
       
         <div className='2xl:w-7/12  mb-16 2xl:mb-10 2xl:order-3 grid grid-cols-2 grid-rows-2 gap-10 2xl:place-items-center 2xl:place-self-center justify-items-center  md:grid-cols-3 md:grid-rows-2'>
             <img className='text-white' src={tesla}/>

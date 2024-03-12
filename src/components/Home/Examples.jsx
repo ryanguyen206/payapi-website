@@ -6,16 +6,16 @@ import bank from '../../assets/home/desktop/icon-banking-and-coverage.svg'
 
 const Examples = () => {
   return (
-    <div className='bg-secondary_bg mt-20 md:mt-0 lg:mt-20 lg:mx-32  '>
+    <div className='bg-secondary_bg mt-20 md:mt-0 lg:mt-20 lg:mx-16 2xl:px-0  '>
 
-    <div className='xl:mx-24 2xl:mx-52'>
+    <div className='xl:mx-24 2xl:mx-80'>
     <div className='text-center lg:flex lg:items-center   '>
             <div>
               <img className='mx-auto md:scale-75 lg:scale-110  lg:-translate-x-10  pl-4 lg:mr-16' src={phone}/>
             </div>
             <div className='lg:mb-8 lg:text-start '>
                 <p className='md:-mt-24 lg:mt-0 mt-10 mb-6 text-secondary_blue text-4xl font-bold'>Simple UI & UX</p>
-                <p className='text-secondary_lblue text-lg w-10/12 mx-auto md:w-7/12 lg:mx-0 lg:w-10/12 border'>Our pre-built form is easy to integrate in your app or website’s checkout 
+                <p className='text-secondary_lblue text-lg w-10/12 mx-auto md:w-7/12 lg:mx-0 lg:w-10/12'>Our pre-built form is easy to integrate in your app or website’s checkout 
         flow and designed to optimize conversion.</p>
             </div>
        
@@ -35,7 +35,7 @@ const Examples = () => {
     
         
 
-          <div className='lg:flex lg:mt-36 lg:gap-x-12 2xl:mx-72'>
+          <div className='lg:flex lg:mt-36 lg:gap-x-12 2xl:mx-44'>
               <div className='mt-24 lg:mt-0 lg:w-1/3'>
                 <img className='mx-auto' src={finances}/>
                 <p className='text-secondary_blue text-center text-2xl font-bold mt-10 md:mt-5'>Personal Finances</p>
@@ -65,7 +65,7 @@ const Examples = () => {
             <form className='mt-10'>
             <input
                 type='text'
-                className='focus:outline-0 md:w-1/2 w-9/12 xl:w-1/3 py-4 px-5 rounded-full text-start text-secondary_lblue font-bold shadow-lg'
+                className='focus:outline-0 md:w-1/2 w-9/12 xl:w-1/3 py-4 px-5 rounded-full text-start text-secondary_lblue font-semibold shadow-lg'
                 placeholder='Enter email address'
             />
             <br/>

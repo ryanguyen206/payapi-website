@@ -4,12 +4,12 @@ import patternCircle from '../../assets/shared/desktop/bg-pattern-circle.svg'
 
 const Hero = () => {
   return (
-    <div className='text-center px-4 lg:px-0 lg:mx-32 2xl:mx-56 lg:flex'>
+    <div className='text-center px-4 lg:px-0 lg:mx-32 2xl:mx-80 lg:flex'>
     <div className='lg:order-last lg:w-5/12 lg:scale-x-110'>
       <img className='mx-auto pl-10'src={phone}/>
     </div>
     <div className='lg:order-1 lg:mt-10 lg:w-8/12  lg:flex lg:flex-col lg:justify-center lg:text-start'>
-      <h1 className='lg:mt-0 text-secondary_blue text-4xl font-display font-medium lg:text-left lg:mx-0 lg:px-0 lg:text-5xl -mt-16 px-10 md:w-3/4 md:mx-auto'>Start building with our APIs for absolutely free</h1>
+      <h1 className='lg:mt-0 text-secondary_blue text-4xl font-display font-medium lg:text-left lg:mx-0 lg:px-0 lg:text-5xl -mt-16 px-10 md:w-3/4 md:mx-auto lg:leading-normal'>Start building with our APIs for absolutely free</h1>
       <form className='mt-10 lg:flex '>
           <input
               type='text'
