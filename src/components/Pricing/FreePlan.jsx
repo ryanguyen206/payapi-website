@@ -29,7 +29,7 @@ const FreePlan = () => {
         {pricingPlans.map(plan => (
             <div className='text-center lg:text-start'>
                 <h3 className='text-primary_dark text-3xl font-display my-24 lg:my-12 2xl:my-12'>{plan.name}</h3>
-                <p className='hidden lg:block mb-12 2xl:w-8/12  2xl:mb-12 text-secondary_lblue t font-light'>{plan.description}</p>
+                <p className='hidden lg:block mb-12 w-9/12 2xl:w-8/12   2xl:mb-12 text-secondary_lblue t font-light'>{plan.description}</p>
                 <p className='text-secondary_blue text-6xl font-bold font-display'>${plan.price.toFixed(2)}</p>
                 <hr className='mt-10 w-10/12 mx-auto lg:w-11/12 lg:mx-0 border-gray-700 mb-10'/>
                 <div className=' mx-auto flex flex-col justify-center items-center lg:flex-none lg:justify-start lg:items-start'>
