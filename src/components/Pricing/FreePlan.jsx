@@ -7,7 +7,7 @@ const FreePlan = () => {
   useEffect(() => {
     const fetchPricingPlans = async () => {
       try {
-        const response = await fetch('https://localhost:44357/api/pricing-plans');
+        const response = await fetch('https://payapiappservice-apim.azure-api.net/api/pricing-plans');
         if (!response.ok) {
           throw new Error('Failed to fetch pricing plans');
         }
