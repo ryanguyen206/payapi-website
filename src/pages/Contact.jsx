@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import { toast } from 'react-toastify'
 const Contact = () => {
 
 
@@ -19,7 +20,7 @@ const Contact = () => {
     }
 
 
-    const restForm = () =>{
+    const restForm = () => {
         setFormValues({
             Name: '',
             Email: '',
@@ -28,18 +29,29 @@ const Contact = () => {
         })
     }
 
+    const validateForm = () => {
+        if (!formValues.Name.trim() || !formValues.Title.trim() || !formValues.Body.trim() || !formValues.Email.trim()  ) {
+            toast.error('Please fill out all fields')
+        } 
+            
+        if (!/\S+@\S+\.\S+/.test(formValues.Email)) {
+            toast.error("Invalid email")
+        }  
+    };
+    
+
     const submitForm = async (e) => {
         e.preventDefault()
+        validateForm()
         const res = await axios.post(`${import.meta.env.VITE_BASE_URL}/contact`, formValues, {
             headers:{
                 'Content-Type':'application/json'
             }
-        
         })
         if (res.status === 200) {
+            toast.success('We received your message and will get back to you as soon as possible')
             restForm()
         }
-  
     }
 
   return (
