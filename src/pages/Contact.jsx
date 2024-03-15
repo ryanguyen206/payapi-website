@@ -18,6 +18,16 @@ const Contact = () => {
         }))
     }
 
+
+    const restForm = () =>{
+        setFormValues({
+            Name: '',
+            Email: '',
+            Title: '',
+            Body: ''
+        })
+    }
+
     const submitForm = async (e) => {
         e.preventDefault()
         const res = await axios.post(`${import.meta.env.VITE_BASE_URL}/contact`, formValues, {
@@ -27,12 +37,7 @@ const Contact = () => {
         
         })
         if (res.status === 200) {
-            setFormValues({
-                Name: '',
-                Email: '',
-                Title: '',
-                Body: ''
-            })
+            restForm()
         }
   
     }
