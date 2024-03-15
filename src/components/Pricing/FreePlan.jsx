@@ -14,35 +14,33 @@ const FreePlan = () => {
 
   return (
     <>
-    {data && 
+    {isLoading ?
       <>
-          <h1 className='text-5xl text-center text-secondary_blue font-display my-24 lg:text-start lg:mx-auto'>Pricing</h1>
-    <div className='mb-24 lg:flex lg:justify-between  lg:gap-x-12'>
-        {data?.map((plan, index) => (
-            <div className='text-center lg:text-start' key={index}>
-                <h3 className='text-primary_dark text-3xl font-display my-24 lg:my-12 2xl:my-12'>{plan.name}</h3>
-                <p className='hidden lg:block mb-12 w-9/12 2xl:w-8/12   2xl:mb-12 text-secondary_lblue t font-light'>{plan.description}</p>
-                <p className='text-secondary_blue text-6xl font-bold font-display'>${plan.price.toFixed(2)}</p>
-                <hr className='mt-10 w-10/12 mx-auto lg:w-11/12 lg:mx-0 border-gray-700 mb-10'/>
-                <div className=' mx-auto flex flex-col justify-center items-center lg:flex-none lg:justify-start lg:items-start'>
-                    {plan.features.map(feature => (
-                        <div key={uuidv4()} className='flex  mb-4 gap-x-4'>    
-                            {feature.enabled && <img className='' src={iconCheck}/>}
-                            <p className={`${feature.enabled ? 'text-secondary_blue font-semibold' :'text-secondary_lblue lg:ml-7' } text-lg`}>{feature.name}</p>
-                        </div>
-                    ))}
-                </div>
-            <button className='text-secondary-blue rounded-full px-6 py-2 border border-secondary_blue mt-8'>Request Access</button>
-            </div>
-        ))}
-    </div>
+        <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>Loading...</p>
       </>
-    
-    
-    }
-
-    </>
-  );
+      :
+      <>
+      <h1 className='text-5xl text-center text-secondary_blue font-display my-24 lg:text-start lg:mx-auto'>Pricing</h1>
+        <div className='mb-24 lg:flex lg:justify-between  lg:gap-x-12'>
+            {data?.map((plan, index) => (
+                <div className='text-center lg:text-start' key={index}>
+                    <h3 className='text-primary_dark text-3xl font-display my-24 lg:my-12 2xl:my-12'>{plan.name}</h3>
+                    <p className='hidden lg:block mb-12 w-9/12 2xl:w-8/12   2xl:mb-12 text-secondary_lblue t font-light'>{plan.description}</p>
+                    <p className='text-secondary_blue text-6xl font-bold font-display'>${plan.price.toFixed(2)}</p>
+                    <hr className='mt-10 w-10/12 mx-auto lg:w-11/12 lg:mx-0 border-gray-700 mb-10'/>
+                    <div className=' mx-auto flex flex-col justify-center items-center lg:flex-none lg:justify-start lg:items-start'>
+                        {plan.features.map(feature => (
+                            <div key={uuidv4()} className='flex  mb-4 gap-x-4'>    
+                                {feature.enabled && <img className='' src={iconCheck}/>}
+                                <p className={`${feature.enabled ? 'text-secondary_blue font-semibold' :'text-secondary_lblue lg:ml-7' } text-lg`}>{feature.name}</p>
+                            </div>
+                        ))}
+                    </div>
+                <button className='text-secondary-blue rounded-full px-6 py-2 border border-secondary_blue mt-8'>Request Access</button>
+                </div>
+            ))}
+          </div>
+        </>}</>);
 }
 
 export default FreePlan;
