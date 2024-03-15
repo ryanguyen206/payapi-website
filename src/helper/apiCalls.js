@@ -1,6 +1,6 @@
 export const getPricingPlans = async () => {
     try {
-        const response = await fetch('https://payapibackendapi.azure-api.net/api/pricing-plans');
+        const response = await fetch(`${import.meta.env.VITE_BASE_URL}/pricing-plans`);
         if (!response.ok) {
           throw new Error('Failed to fetch pricing plans');
         }
