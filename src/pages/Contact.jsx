@@ -105,7 +105,7 @@ const Contact = () => {
          
            
         
-            <button onClick={(e) => submitForm(e)} className='border mt-10 border-secondary_blue px-6 py-4 hover:bg-secondary_blue hover:text-white rounded-full w-1/6'>Submit</button>
+            <button onClick={(e) => submitForm(e)} className='border mt-10 border-secondary_blue px-6 py-4 hover:bg-secondary_blue hover:text-white rounded-full xl:w-1/3'>Submit</button>
         </form>
     
     </div>
