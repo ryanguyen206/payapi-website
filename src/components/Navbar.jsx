@@ -18,7 +18,7 @@ const Navbar = () => {
         <ul className='flex text-secondary_blue ml-14 space-x-5 text-xl'>
           <li className='hover:text-primary_light cursor-pointer '><Link to='/pricing'>Pricing</Link></li>
           <li className='hover:text-primary_light  cursor-pointer '><Link to='/about'>About</Link></li>
-          <li className='hover:text-primary_light cursor-pointer '>Contact</li>
+          <li className='hover:text-primary_light cursor-pointer '><Link to='/contact'>Contact</Link></li>
         </ul>
         <button className='bg-primary_dark hover:bg-secondary_pink z-10 rounded-full text-white px-6 py-3 z-1 lg:-ml-16'>Schedule a demo</button>
   
