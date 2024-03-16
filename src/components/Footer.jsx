@@ -9,7 +9,7 @@ const Footer = () => {
     <>
     <div className='bg-secondary_black text-center py-10  lg:px-32 2xl:px-80  lg:flex lg:items-center justify-between'>
         <div>
-          <img className='scale-75 mx-auto lg:mx-0' src={logo}/>
+          <Link to='/'><img className='scale-75 mx-auto lg:mx-0' src={logo}/></Link>
         </div>
         <div>
           <ul className='text-primary_light mt-10 lg:mt-0 lg:space-y-0 space-y-4 md:text-md lg:flex lg:space-x-10'>
