@@ -21,11 +21,11 @@ const Examples = () => {
        
           </div>
 
-          <div className='text-center  lg:flex lg:items-center lg:justify-between mt-24 lg:mt-32 md:mt-0 '>
-            <div className='lg:order-4'>
-              <img className='mx-auto md:scale-75 lg:scale-125 pl-4' src={phone}/>
+          <div className='text-center lg:flex lg:items-center lg:justify-between mt-24 lg:mt-32 md:mt-0 '>
+            <div className='lg:order-4 lg:flex-grow mb-10 lg:mb-0'>
+              <img className='mx-auto lg:scale-125 pl-4 ' src={easyImplment}/>
             </div>
-            <div className='lg:text-start lg:mb-8  '>
+            <div className='lg:text-start lg:mb-8 lg:w-2/3  '>
                 <p className='md:-mt-24 lg:mt-0 mt-10 mb-6 text-secondary_blue text-4xl  font-bold'>Easy to implement</p>
                 <p className='text-secondary_lblue text-lg w-10/12 mx-auto md:w-7/12 lg:w-9/12 lg:mx-0'>Our API comes with just a few lines of code. You'll be up and running in to time. We built our documentation page to integrate payments functionality with issue. </p>
             </div>
